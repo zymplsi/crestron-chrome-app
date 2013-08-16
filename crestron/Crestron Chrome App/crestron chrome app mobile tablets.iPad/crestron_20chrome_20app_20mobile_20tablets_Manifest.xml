@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<File Type='Manifest' Version='4.1.0' ObjectDisplayList='1'>
+<Project FileName='crestron_20chrome_20app_20mobile_20tablets.zip' Size='1702' Build='20130815141821'>
+<Sources>
+<Source FileName='crestron_20chrome_20app_20mobile_20tablets.xml' Size='554' Type='Application' Build='20130815141821' />
+<Source FileName='crestron_20chrome_20app_20mobile_20tablets_Resource.xml' Size='586' Type='Resource' Build='20130815141821' />
+<Source FileName='Main.xml' Size='4763' Type='Page' Build='20130815141838' />
+</Sources>
+</Project>
+</File>
