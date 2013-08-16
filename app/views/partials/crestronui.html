@@ -1,0 +1,67 @@
+
+<div ng-controller='CrestronUICtrl'>
+<div class="container">
+  <div class="row container">
+
+    <div class="span3 hero-unit">
+			<label for="host">Host:</label>
+			<input type="text" ng-model="host">
+			<label for="port">Port:</label>
+			<input type="number" ng-model="port">
+			<div  ng-show="host && port" >
+				<div ng-show="!disconnectIsVisible">           
+					<button ng-click="connectInitialise()">Connect</button>
+				</div>
+				<div ng-show="disconnectIsVisible">           
+					<button ng-click="disconnect()">Disconnect</button>
+				</div>
+				<div crestron-connection></div>
+			</div>
+			
+
+<!-- 			for debugging -->
+<!-- 			<div class="row">
+				<button ng-click="connectRequest()">Connect Request</button>
+				<button ng-click="updateRequest()">Update Request</button>
+				<button ng-click="heartbeatRequest()">Heartbeat Request</button>
+			</div> -->
+
+    </div>
+    <div class="span4 hero-unit">
+	    <div class="container">
+				<div class="row">
+					<div class="span5">
+						<div class="row">
+								<div class="span4">
+									<crestronsimplebutton join="4" off-state="btn btn-large" on-state="btn btn-large btn-primary">On/Off</crestronsimplebutton>
+									<div class="btn-group pull-right">
+										<crestronsimplebutton join="5" off-state="btn btn-large " on-state="btn btn-large btn-primary">&nbsp&nbspUp&nbsp&nbsp</crestronsimplebutton>
+										<crestronsimplebutton join="6" off-state="btn btn-large" on-state="btn btn-large btn-primary">Down</crestronsimplebutton>
+									</div>
+								</div>			
+						</div>
+						<p>
+						<div class="row">
+							<div class="span4">
+								<crestronsimplegauge join="5" gauge="progress" indicator="bar"></crestronsimplegauge>
+							</div>
+						</div>
+						<p>
+						<div class="row">
+							<div class="span4">
+								<h2> Status:  
+									<crestronsimpletext join="4"></crestronsimpletext>
+								</h2>
+							</div>
+						</div>
+
+					</div>			
+				</div>
+			</div>
+    </div>
+  </div>
+</div>
+
+
+
+
